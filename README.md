@@ -1,4 +1,4 @@
-# express-starter-kit
+## express-starter-kit
 
-## npm install
-## npm start
+npm install
+npm start
