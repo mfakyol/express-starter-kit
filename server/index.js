@@ -6,6 +6,7 @@ import AppRoutes from "./routes/index";
 
 // connectDb();
 
+const PORT = process.env.PORT || 3001;
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -19,6 +20,6 @@ app.get("/", async (req, res) => {
   );
 });
 
-app.listen(3001, () => {
-  console.log("Server has benn started at http://localhost:3001");
+app.listen(PORT, () => {
+  console.log("Server has benn started at http://localhost:"+PORT);
 });

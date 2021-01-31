@@ -8,11 +8,12 @@ export default {
 };
 
 export function connectDb() {
-  mongoose.connect(dbConnectionString, {
-    useCreateIndex: true,
-    useUnifiedTopology: true,
-    useNewUrlParser: true,
-  })
-  .then(() => console.log("Connected db"))
-  .catch((err) => console.log(err.message))
+  mongoose
+    .connect(dbConnectionString, {
+      useCreateIndex: true,
+      useUnifiedTopology: true,
+      useNewUrlParser: true,
+    })
+    .then(() => console.log("Connected db"))
+    .catch((err) => console.log(err.message));
 }
